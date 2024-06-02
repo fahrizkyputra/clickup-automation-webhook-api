@@ -1,0 +1,21 @@
+parameters: {}
+environment: {}
+packages:
+    - name: clickup
+      shared: false
+      environment: {}
+      parameters: {}
+      annotations: {}
+      functions:
+        - name: webhook
+          binary: false
+          main: main
+          runtime: php:8.2
+          web: true
+          webSecure: false
+          parameters: {}
+          environment: 
+            CLICKUP_API_TOKEN: <CLICKUP_API_TOKEN>
+            LIST_ID: <'LIST_ID'>
+          annotations: {}
+          limits: {}
